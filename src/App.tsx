@@ -1,13 +1,9 @@
-import './App.css';
-import Wrapper from './Components/UtilityComponents/Wrapper/Wrapper';
-import MainPage from './Components/Organisms/MainPage/MainPage';
+import "./App.css";
+import { RouterProvider } from "react-router-dom";
+import { router } from "./pages/routes";
 
 function App() {
-  return (
-    <Wrapper>
-      <MainPage />
-    </Wrapper>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;
